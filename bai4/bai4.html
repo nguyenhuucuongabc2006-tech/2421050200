@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>bai 4</title>
+
+    </head>
+    <body>
+        <h1>Form tạo thông tin</h1>
+        <form>
+            <!--Input nếu không truyền type thì-->
+            <!--thì sẽ mặc định là text-->
+         <div>
+           <p><b>Họ và Tên:</b></p>
+             <input type="text" name="hoVaTen">
+         </div>
+          <br>
+         <div>
+             <p><b>Giới thiệu:</b></p>
+             <textarea name="gioithieu"></textarea>
+         </div>
+         <div>
+            <p><b>email</b></p>
+            <input type="email" name="email">
+         </div>
+          <div>
+            
+            <!-- required là bắt buộc phải nhập-->  
+            <p><b>Số điện thoại</b></p>
+            <input name="soDienThoai"
+            type="tel"
+            placeholer="Dạng số 123"
+            required 
+            pattern="([0-9]{1})(-[0-9]{3})(-[0-9]{3})(-[0-9]{4})">
+            
+         </div>
+         <div>
+             <p><b>Số điện thoại</b></p>
+            <input name="soDienThoai"
+            type="tel"
+            placeholer="Dạng số 123"
+            required 
+            pattern="([0]{1})([9,3,6,8]{1})([0-9]{8})">
+            
+         </div>
+          <div>
+             <p><b>Giới tính:</b></p>
+             <input type="radio" name="gioiTinh" value="nam">Nam<br>
+             <input type="radio" name="gioiTinh" value="nu">Nữ
+         </div>
+         <div>
+             <p><b>Sở thích:</b></p>
+             Game:<input type="checkbox" name="soThich" value="game"><br>
+             Music:<input type="checkbox" name="soThich" value="music"><br>
+             Sport:<input type="checkbox" name="soThich" value="sport"><br>
+             Cook:<input type="checkbox" name="soThich" value="cooker">
+             
+         </div>
+         <div>
+             <p><b>Trình duyệt web hay sử dụng:</b></p>
+             <input List="browsers">
+              <datalist id="browsers">
+                 <option value="Internet Explorer">
+                 <option value="Firefox">   
+                 <option value="CocCoc">
+                 <option value="Chrome">
+                 </datalist>
+            
+            
+             <select name="browsers">
+                 <option value="Internet Explorer">Internet Explorer</option>
+                 <option value="Firefox">Firefox</option>  
+                 <option value="CocCoc">CocCoc</option>
+                 <option value="Chrome">Chrome</option>
+             </select> 
+         </div>
+         <div>
+            0 <input type="range" id="a" value="50"> 100
+         </div>
+         <div>
+            <input type="submit">
+            <button>Click</button>
+            <input type="reset">
+        </div>
+       <iframe
+       width="560"
+       height="315" 
+       src="https://www.youtube.com/embed/FN7ALfpGxiI?si=IM29JeXuEp-iatu6"
+       title="YouTube video player"
+       frameborder="0" allow="
+       accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+       referrerpolicy="strict-origin-when-cross-origin"
+       allowfullscreen></iframe>
+        </form>
+        <MARQUEE>
+            <h1>Chào mừng bạn đã đến với bình nguyên vô tận</h1>
+        </MARQUEE>
+        <audio controls>
+            <source src="/anh/BauMroimoi.mp3" type="audio/mp3">
+        </audio>
+        <video controls>
+           <source src="/anh/1.mp4" type="video/mp4">
+        
+        </video>
+        <!--dấu cách thay bằng &nbsp;-->
+         <!--dấu cách thay bằng &lt;-->
+          <!--dấu cách thay bằng &nbsp;-->
+           <!--dấu cách thay bằng &nbsp;-->   
+
+
+
+    </body>
+</html>
