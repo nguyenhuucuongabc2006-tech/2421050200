@@ -1,0 +1,13 @@
+h3{
+    color: green;
+}
+#tieuDe{
+    color: pink;
+}
+.tieuDe{
+    /* backgroud-color để qui định màu nền */
+    background-color: black;
+}
+h3.tieuDe2{
+    background-color: orange;
+}
