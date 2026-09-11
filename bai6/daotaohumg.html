@@ -4,8 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đào tạo</title>
+    <style>
+        .Lien-ket{
+            color:white;
+            /* text-decoration bỏ gạch chân */
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+        }
+        .trai{
+        
+            width: 20%;
+            height:100vh;
+            /* tạo đường viền dùng border */
+            /* 3 tham số: độ dày, loại đường viền, màu sắc */
+            border-right: 2px solid #198cf0;
+        }
+        
+        body{
+            margin:0;
+        }
+        .danh-sach-muc{
+            padding:0;
+            margin:0;
+            /* bỏ dấu chấm ở danh sách khi dùng ul,Li*/
+            list-style: none;
+            display: flex;
+            /* gap khoảng cách các đối tượng ở trong */
+            gap: 20px;
+        }
+        .danh-muc{ 
+             background-color:#198cf0;
+             padding: 10px;
+        }
+        .khoi-thong-tin{
+           
+            width: 100%;
+            margin-bottom:10px;
+        }
+        form{
+            background-color: antiquewhite;
+            width:80%;
+            margin:10px auto;
+        }
+        .khoi{
+            width:100%;
+        }
+        p{
+            margin:0%;
+        }
+        input{
+            width:100%;
+            padding: 5px 0;
+        }
+        .quen-mat-khau{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .quen-mat-khau-lien-ket{
+            color:#198cf0;
+            text-decoration: none;
+        }
+        button{
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+        }
+
+        .phai{
+           
+            width: 80%;
+            height:100vh;
+        }
+
+
+    </style>
 </head>
 <body>
+  <!-- Danh mục -->
+    <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+            <Li class="muc"><a href="#" class="Lien-ket">Thực tập, Đồ án</Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Thủ tục một cửa</Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Một cửa online</Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Email-HUMG</Li>
+            
+        
+        </ul>
+
+
+    </nav>
+    <main>
+        <div class="trai">
+        
+            <div class="khoi-thong-tin">   
+            <form action="">
+                <div>
+                    <p>Tài Khoản</p>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="khoi">
+                    <p>Mật Khẩu</p>
+                    <input type="password" name="" id="">
+                </div>
+                <div class="quen-mat-khau">
+                    <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu?</a>
+                </div>
+                <div>
+                    <button>Đăng nhập</button>
+                    <button>Đăng nhập với microsoft office</button>
+                    
+            </div>
+        </div>
+            </form>
+        </div>        
+        <div class="phai">
+        <div class="danh-sach-tin"></div> 
+        <div class="tin">
+            <div class="chuc-nang">
+                <div class="tieu-de">Tin tức</div>
+                <div class="xem-tiep"><a class="lien-ket-xem-tiep" href="#">Xem tiếp</a></div>
+            </div>
+        </div>
+        </div>
+    </main>
     
 </body>
 </html>
