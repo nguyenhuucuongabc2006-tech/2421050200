@@ -1,0 +1,222 @@
+        .Lien-ket{
+            color:white;
+            /* text-decoration bỏ gạch chân */
+            text-decoration:none;
+            
+        }
+        main{
+            display: flex;
+        }
+        .trai{
+        
+            width: 25%;
+            height: 160vh;
+            /* tạo đường viền dùng border */
+            /* 3 tham số: độ dày, loại đường viền, màu sắc */
+            border-right: 2px solid #198cf0;
+            display: flex;
+            
+        }
+        
+        body{
+            margin:0;
+        }
+        .danh-sach-muc{
+            padding:0;
+            margin:0;
+            /* bỏ dấu chấm ở danh sách khi dùng ul,Li*/
+            list-style: none;
+            display: flex;
+            /* gap khoảng cách các đối tượng ở trong */
+            gap: 20px;
+        }
+        .danh-muc{ 
+             background-color:#198cf0;
+             
+        }
+        .khoi-thong-tin{
+            
+            width: 100%;
+            margin-bottom:10px;
+            
+                    
+        }
+        form{
+           
+            width:80%;
+            margin:10px auto;
+        }
+        .khoi{
+            width:100%;
+            
+        }
+        p{
+            margin:0%;
+        }
+        input{
+            width:100%;
+            padding: 5px 0;
+            border-radius: 5px;
+        }
+        .quen-mat-khau{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .quen-mat-khau-lien-ket{
+            color:#198cf0;
+            text-decoration: none;
+            display:flex;
+        }
+        button{
+            color:white;
+            background-color:#198cf0;
+            width: 100%;
+            text-decoration:none;
+            border-radius: 5px;
+            margin-bottom:10px;
+            height:35px;
+        }
+        .login{
+            margin-bottom:10px;
+        }
+        main{
+            display: flex;
+
+        }
+        .he-thong{
+            width:99%;
+            margin:10px auto;
+            display:flex;
+            justify-content:space-between;
+            border-bottom:1px solid #198cf0;
+            color:#198cf0;
+        }
+        .anh-Humg{       
+         width:90%;
+         padding:10px;
+         height:60px;
+         border-radius:10px;
+         margin:120px 8px;        
+        }
+        .chuc-nang{
+            width:95%;
+            margin:10px auto;
+            display:flex;
+            justify-content:space-between;
+            border-bottom:1px solid #198cf0;
+        }
+
+        .phai{
+           
+            width: 80%;
+            height:100vh;
+        }
+        .tin{
+            width: 95%;
+            /* height: 100px */
+            height:250px;
+            margin:20px auto;
+            border   : 1px solid #198cf0;
+            border-radius:10px;
+        }
+        .chuc-nang{
+            width: 95%;
+            margin: 5px auto;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #198cf0;
+        }
+        .lien-ket-xem-tiep{
+            color:#198cf0;
+            text-decoration: none;
+            font-weight:bold;
+        }
+        .danh-sach-bai{
+            display:flex;
+            justify-content:space-around;
+           
+        }
+        .chi-tiet-bai{
+            width: 23%;
+            /* background-color:#198cf0; */
+        }
+        .anh-bai{       
+         width:90%;
+         height:100px;
+         border-radius:10px;        
+        }
+        .ngay-dang{
+           display:flex;
+           justify-content:flex-end;
+           color:black;
+           margin:5px 20px;
+            
+        }
+        a{
+            text-decoration:none;
+            color:azure;
+            gap:20px;
+        }
+         
+       .thong-bao{          
+        width: 95%;      
+        height:250px;
+        margin:20px auto;
+        border   : 1px solid #198cf0;
+        border-radius:10px;
+       }
+       .anh-bai2{       
+         width:90%;
+         height:100px;
+         border-radius:10px;
+         
+       }
+       .cac-thong-bao{
+         width:50%;
+       }
+       .ngay-dang2{
+           display:flex;
+           justify-content:flex-end;
+           color:black;
+           margin:1px 20px;
+       }
+       .khu-anh{
+        width:50%;
+        display:flex;
+        padding:10px;
+        border-right: 2px solid gray;
+       }
+       .cac-thong-bao{
+        width:70%;
+        padding:8px;
+       }
+       .chi-tiet-thong-bao{
+        width:50%;
+       }
+       .ngay-dang1{
+           display:flex;
+           justify-content:flex-end;
+           color:black;
+           margin:-5px 10px;
+       }  
+       .huong-dan{          
+        width: 95%;      
+        height:250px;
+        margin:20px auto;
+        border: 1px solid #198cf0;
+        border-radius:10px;
+       }
+        .cai-dat{          
+        width: 95%;      
+        height:180px;
+        margin:20px auto;
+        border: 1px solid #198cf0;
+        border-radius:10px;
+       }
+       .anh-QR{       
+         width:60%;
+         height:120px;
+         border-radius:10px;         
+      }
+      

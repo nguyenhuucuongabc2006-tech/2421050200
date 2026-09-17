@@ -4,91 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đào tạo</title>
+     <link rel="stylesheet" href="daotao.css" type="text/css">
     <style>
-        .Lien-ket{
-            color:white;
-            /* text-decoration bỏ gạch chân */
-            text-decoration: none;
-        }
-        main{
-            display: flex;
-        }
-        .trai{
-        
-            width: 20%;
-            height:100vh;
-            /* tạo đường viền dùng border */
-            /* 3 tham số: độ dày, loại đường viền, màu sắc */
-            border-right: 2px solid #198cf0;
-        }
-        
-        body{
-            margin:0;
-        }
-        .danh-sach-muc{
-            padding:0;
-            margin:0;
-            /* bỏ dấu chấm ở danh sách khi dùng ul,Li*/
-            list-style: none;
-            display: flex;
-            /* gap khoảng cách các đối tượng ở trong */
-            gap: 20px;
-        }
-        .danh-muc{ 
-             background-color:#198cf0;
-             padding: 10px;
-        }
-        .khoi-thong-tin{
-           
-            width: 100%;
-            margin-bottom:10px;
-        }
-        form{
-            background-color: antiquewhite;
-            width:80%;
-            margin:10px auto;
-        }
-        .khoi{
-            width:100%;
-        }
-        p{
-            margin:0%;
-        }
-        input{
-            width:100%;
-            padding: 5px 0;
-        }
-        .quen-mat-khau{
-            display: flex;
-            justify-content: flex-end;
-        }
-        .quen-mat-khau-lien-ket{
-            color:#198cf0;
-            text-decoration: none;
-        }
-        button{
-            width: 100%;
-            padding: 5px 0;
-            border-radius: 5px;
-        }
-
-        .phai{
-           
-            width: 80%;
-            height:100vh;
-        }
-
-
+       
     </style>
 </head>
 <body>
   <!-- Danh mục -->
     <nav class="danh-muc">
         <ul class="danh-sach-muc">
-            <Li class="muc"><a href="#" class="Lien-ket">Thực tập, Đồ án</Li>
-            <Li class="muc"><a href="#" class="Lien-ket">Thủ tục một cửa</Li>
-            <Li class="muc"><a href="#" class="Lien-ket">Một cửa online</Li>
-            <Li class="muc"><a href="#" class="Lien-ket">Email-HUMG</Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Thực tập, Đồ án</a></Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Thủ tục một cửa</a></Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Một cửa online</a></Li>
+            <Li class="muc"><a href="#" class="Lien-ket">Email-HUMG</a></Li>
             
         
         </ul>
@@ -111,23 +39,210 @@
                 <div class="quen-mat-khau">
                     <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu?</a>
                 </div>
-                <div>
-                    <button>Đăng nhập</button>
-                    <button>Đăng nhập với microsoft office</button>
+                <div class="khoi-thong-tin">
+                    <a><button>Đăng nhập</button></a>
+                    <a><button>Đăng nhập với microsoft office</button></a>
                     
             </div>
+            
+        
+            <div class="he-thong">
+                <div class="tieu-de">Trang chủ</div>
+            </div>
+              <div class="he-thong">
+                <div class="tieu-de">Khảo sát đánh giá</div>
+            </div>
+            
+            <img class="anh-Humg" src="../anh/anhHUMG.png" alt="Ảnh đào tạo">
+          
         </div>
+   
+    </div>
             </form>
         </div>        
         <div class="phai">
-        <div class="danh-sach-tin"></div> 
+        <div class="danh-sach-tin">
         <div class="tin">
             <div class="chuc-nang">
-                <div class="tieu-de">Tin tức</div>
-                <div class="xem-tiep"><a class="lien-ket-xem-tiep" href="#">Xem tiếp</a></div>
+                <div class="tieu-de"><b>Tin tức</b></div>
+                <div class="xem-tiep"><a class="lien-ket-xem-tiep" href="">Xem tiếp</a></div>
             </div>
+
+        
+       
+      <div class="danh-sach-bai">
+           <div class="chi-tiet-bai">
+                    <a href="#">
+                    <img class="anh-bai" src="../anh/anhdaotao.png" alt="Ảnh đào tạo"></a>
+                    
+                    <p class="ngay-dang">
+                        05/05/2026
+                    </p>
+                  <p class="tieu-de">Về việc đăng ký khối lượng học kỳ phụ năm học 2025-2026</p>
+                </div>
+                  
+                
+     
+           <div class="chi-tiet-bai">
+                 <a href="#"><img class="anh-bai" src="../anh/anhdaotao.png" alt="Ảnh đào tạo"></a>
+                
+                  <p class="ngay-dang">
+                        15/04/2026
+                    </p>
+                   <p class="tieu-de">Về việc nghỉ học</p>
+                </div>
+                
+            
+            
+    
+           <div class="chi-tiet-bai">
+                    <a href="#">
+                    <img class="anh-bai" src="../anh/anh2.png" alt="Ảnh đào tạo"></a>
+                  <p class="ngay-dang">
+                        24/09/2024
+                  </p> 
+                   <p class="tieu-de">Trường Đại học Mỏ – Địa chất đạt chứng nhận kiểm định chất lượng cơ sở giáo dục (chu kỳ 2)</p>
+             
+                </div>
+              </div> 
+           </div>      
+        </div>  
+         
+            
+        <div class="thong-bao">
+            <div class="chuc-nang">
+                <div class="tieu-de"><b>Thông báo</b></div>
+                <div class="xem-tiep"><a class="lien-ket-xem-tiep" href="">Xem tiếp</a></div>
+            </div>
+           <div class="danh-sach-bai">
+            <div class="khu-anh">
+            <div class="chi-tiet-thong-bao">
+                    <a href="#">
+                    <img class="anh-bai2" src="../anh/anh1thongbao.png" alt="Ảnh đào tạo"></a>
+                   
+                    <p class="ngay-dang">
+                        17/09/2026
+                    </p>
+                   <p class="tieu-de">Về việc chuyển hình thức học <br> tập</p>
+                </div>
+                  
+                
+     
+           <div class="chi-tiet-thong-bao">
+                 <a href="#">
+                 <img class="anh-bai2" src="../anh/anh2thongbao.png" alt="Ảnh đào tạo"></a>
+                 
+                  <p class="ngay-dang">
+                        27/08/2026
+                    </p>
+                   <p class="tieu-de">Về việc ghép lớp và mở lớp học kì <br> 1 năm học 2026-2027</p>
+                </div>
+            </div>
+            <div class="chi-tiet-thong-bao">
+                
+              <p class="cac-thong-bao">
+                >>Thông báo về việc nghỉ học nhân dịp Quốc khánh 2/9
+             </p>
+             <p class="ngay-dang1">
+                        24/08/2026
+                    </p>
+             
+              <p class="cac-thong-bao">
+                >>Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027
+              </p>
+              <p class="ngay-dang1">
+                        11/08/2026
+                    </p>
+                    <p class="cac-thong-bao">
+                >>Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027
+              </p>
+              <p class="ngay-dang1">
+                        20/07/2026
+                    </p>
+
+            
+                </div>
+            </div>
+    </div>
+
+
+           
+         
+        <div class="thong-bao">
+            <div class="chuc-nang">
+                <div class="tieu-de"><b>Thông báo</b></div>
+                <div class="xem-tiep"><a class="lien-ket-xem-tiep" href="">Xem tiếp</a></div>
+            </div>
+           <div class="danh-sach-bai">
+            <div class="khu-anh">
+            <div class="chi-tiet-thong-bao">
+                    <a href="#">
+                    <img class="anh-bai2" src="../anh/anhhuongdan1.png" alt="Ảnh đào tạo"></a>
+                   
+                    <p class="ngay-dang">
+                        18/11/2025
+                    </p>
+                   <p class="tieu-de">Hướng dẫn lấy lại mật khẩu <br> e-mail HUMG</p>
+                </div>
+                  
+                
+     
+           <div class="chi-tiet-thong-bao">
+                 <a href="#">
+                 <img class="anh-bai2" src="../anh/anhhuongdan2.png" alt="Ảnh đào tạo"></a>
+                 
+                  <p class="ngay-dang">
+                        01/08/2023
+                    </p>
+                   <p class="tieu-de">Hướng dẫn lấy lại mật khẩu trang web daotaodaihoc.humg.edu.vn</p>
+                </div>
+            </div>
+            <div class="chi-tiet-thong-bao">
+                
+              <p class="cac-thong-bao">
+                >>Hướng dẫn lấy lại mật khẩu e-mail HUMG
+             </p>
+             <p class="ngay-dang1">
+                        1/08/2023
+                    </p>
+             
+              <p class="cac-thong-bao">
+                >>Hướng dẫn đăng ký khối lượng học tập tại trang web daotaodaihoc.humg.edu.vn
+              </p>
+              <p class="ngay-dang1">
+                        19/12/2024
+                    </p>
+                    <p class="cac-thong-bao">
+                >>Hướng dẫn kiểm tra, tra cứu trực tuyến thông tin về bằng tốt nghiệp của trường Đại học Mỏ - Địa chất
+              </p>
+              <p class="ngay-dang1">
+                        11/05/2021
+                    </p>
+
+            
+                </div>
+            </div>
+    </div>
+     <div class="cai-dat">
+            <div class="chuc-nang">
+                <div class="tieu-de"><b>Cài đặt App mobile</b></div>
+            </div>
+             <div class="danh-sach-bai">
+                
+           <div class="chi-tiet-bai">
+                    <a href="#">
+                    <img class="anh-QR" src="../anh/maQR1.png" alt="Ảnh đào tạo"></a>
+                    
+                </div>
+                   
+            
+           <div class="chi-tiet-bai">
+                    <a href="#">
+                    <img class="anh-QR" src="../anh/maQR2.png" alt="Ảnh đào tạo"></a>
+            
         </div>
-        </div>
+            
+        
     </main>
     
 </body>
