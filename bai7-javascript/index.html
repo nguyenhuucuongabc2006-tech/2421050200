@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta ten="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Internal JavaScript-->
+    <script>
+         // in ra màn hình
+        document.writeln("Hello world <br> ");
+
+         //khai báo biến
+        var ten = "Quang Anh <br>";
+        
+        document.writeln(ten);
+        
+        ten = "Ly <br>";
+
+        document.writeln(ten);
+
+        var namNay = 2026;
+
+        document.writeln(namNay);
+
+        //Phep toan
+        
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        var ketQua = 0;
+        //cong +
+        document.write("<br> Ket qua soThu1 + soThu2 la:")
+        ketQua=soThuNhat + soThuHai;
+        document.writeln(ketQua);
+        //phep -
+        document.write("<br> Ket qua soThu1 - soThu2 la:")
+        ketQua=soThuNhat - soThuHai;
+        document.writeln(ketQua);
+        //nhan *
+        document.write("<br> Ket qua soThu1 * soThu2 la:")
+        ketQua=soThuNhat * soThuHai;
+        document.writeln(ketQua);
+        //chia/
+        document.write("<br> Ket qua soThu1 / soThu2 la:")
+        ketQua=soThuNhat / soThuHai;
+        document.writeln(ketQua);
+        //%
+        document.write("<br> Ket qua soThu1 % soThu2 la:")
+        ketQua=soThuNhat % soThuHai;
+        document.writeln(ketQua);
+
+        //++
+        document.writeln("<br>");
+        document.writeln(++soThuNhat);
+        //--
+        document.writeln("<br>");
+        document.writeln(--soThuNhat);
+        //+=
+        soThuNhat += soThuHai;
+        //soThuNhat = soThuNhat + soThuHai
+        document.writeln(soThuNhat);
+        //-=
+        soThuNhat -= soThuHai;
+        //soThuNhat = soThuNhat - soThuHai
+        document.writeln(soThuNhat);
+
+        var ho = "Do";
+        document.writeln("<br>"+ ho +" "+ ten);
+        document.writeln("<br>");
+        document.writeln(ho.length);
+
+        //Kiem tra kieu du lieu cua bien typeof()
+        document.writeln(typeof(ho));
+        document.writeln("<br>");
+        //vi tri xuat hien trong chuoi
+        var hoVaTen = "Luong Quang Anh"
+        document.writeln(hoVaTen.indexOf("Q"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.includes("e"));
+        document.writeln("<br>");
+        //kiem tra chuoi
+        document.writeln(hoVaTen.startsWith("Luong"));
+        document.writeln("<br>");
+        //replace thay the ky tu
+        document.write(hoVaTen.replace("Luong","Do"));
+        document.writeln("<br>");
+        //toUpperCase() viet hoa full
+        document.write(hoVaTen.toUpperCase());
+        document.writeln("<br>");
+        //toLowerCase() viet thuong full
+        document.write(hoVaTen.toLowerCase());
+
+       </script>
+    <!--External JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>
