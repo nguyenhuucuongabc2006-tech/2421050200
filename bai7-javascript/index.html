@@ -71,6 +71,7 @@
         document.writeln("<br>");
         document.writeln(ho.length);
 
+        document.writeln("<br>");
         //Kiem tra kieu du lieu cua bien typeof()
         document.writeln(typeof(ho));
         document.writeln("<br>");
@@ -92,6 +93,122 @@
         //toLowerCase() viet thuong full
         document.write(hoVaTen.toLowerCase());
 
+        //Date
+        var homNay = new Date()
+        document.writeln("<br>");
+        document.write(homNay);
+
+        var ngay= new Date("8/6/2025");
+        document.writeln("<br>");
+        document.write(ngay);
+
+        var namNay = homNay.getFullYear();
+        document.writeln("<br>");
+        document.write(namNay);
+        //tháng bị chậm hơn 1
+        var thangNay = homNay.getMonth()+1;
+        document.writeln("<br>");
+        document.write(thangNay);
+        //thứ bị chậm hơn 1
+        var thuNay = homNay.getDay()+1;
+        document.writeln("<br>");
+        document.write(thuNay);
+        var ngayNay = homNay.getDate();
+        document.writeln("<br>");
+        document.write(ngayNay);
+        
+        document.writeln("<br>");
+        document.write("Hôm nay là thứ" +" "+thuNay +" "+ "ngày" +" "+ ngayNay +" "+ "tháng" +" "+ thangNay +" "+ "năm"+" "+ namNay);
+        
+        // Mảng
+        var mangSo = [1,2,3,4,5];
+        document.writeln("<br>");
+        document.write(mangSo[2]);
+        document.writeln("<br>");
+        document.write(mangSo.length);
+        
+        document.writeln("<br>");
+        var mangTen = ["Quang Anh","Ly","Thắng"];
+        document.write(mangTen[2]);
+
+        document.writeln("<br>");
+        var mang = [1, 2, 3, 4, 5, "Quang Anh", "Ly", "Thắng"];
+        document.write(mang[5]);
+ 
+        var d = mang.concat(mangSo, mangTen);
+        document.writeln("<br>");
+        document.write(d.join("-"));
+        document.writeln("<br>");
+        //pop phần tử cuối mảng
+        document.write(d.pop());
+        document.writeln("<br>");
+        //push thêm vào mảng
+        d.push("Duy");
+        document.write(d);
+        document.write("<br>");
+        //reverse đảo ngược mảng
+        document.write(mangSo.reverse());
+        document.write("<br>");
+        //Object
+        var thongTinSinhVien = {
+            ten : "Luong Quang Anh",
+            namSinh : 2006,
+            queQuan : {
+                thanhPho : "Bac Ninh",
+                phuong : "Chu"
+            }                                                                                      
+        };
+
+
+        document.write(thongTinSinhVien.queQuan.thanhPho);
+        document.write("<br>");
+        tuoi= namNay-thongTinSinhVien.namSinh;
+        thongTinSinhVien.tuoi = tuoi;
+        //console.log(thongTinSinhVien);
+        //boolean: true nam / false nữ
+
+        thongTinSinhVien.gioiTinh = true;
+        var danhSach = [
+            {
+            ten : "Luong Quang Anh",
+            namSinh : 2006,
+            queQuan : {
+                thanhPho : "Bac Ninh",
+                phuong : "Chu"
+            }
+          }
+        ];
+
+        //== != > <
+        //=== so sánh cả giá trị và kiểu dữ liệu
+        var so1 = 10;
+        var so2 = "10";
+        document.writeln("<br>");
+        document.writeln(so1==so2);
+        document.writeln("<br>");
+        document.writeln(so1===so2);
+
+        if(thuNay > 6){
+            document.write("Cuối tuần");
+        }else if(thuNay==6){
+            document.write("Sắp được ngủ")
+
+        }
+        else{
+            document.write("Đi học");
+        }
+        document.writeln("<br>");
+       var n=5;
+        if(n%2==0){
+            document.write(n + "Số chẵn");
+        }else{
+            document.write(n + "Số lẻ");
+        }
+        n=5;
+    
+        
+
+        
        </script>
     <!--External JavaScript-->
     <script src="script.js"></script>
