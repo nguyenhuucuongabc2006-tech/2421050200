@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - 2</title>
+</head>
+<body>
+    <script>
+      //function
+
+      //không tham số
+      function sayHello(){
+          document.write("Hello");
+      }
+
+      sayHello();
+     
+      //có tham số
+      function sayHello2(ten){
+        document.write("<br> Xin chào bạn " + ten);
+      }
+
+      sayHello2("Quang Anh");
+      sayHello2("Ly");
+       
+      document.write("<br>");
+
+      function tinhTong(a, b){
+        if (isNaN(a) == false && isNaN(b) == false){
+          document.write(a+b);
+        
+        }
+      }
+      var soThuNhat = prompt("Nhập số thứ 1 ", "");
+      var soThuNhat = prompt("Nhập số thứ 2 ", "");
+      tinhTong(soThuNhat, soThuHai);
+      document.write(+tinhTong);
+
+      //Btvn2:
+      //Viết hàm tính điểm chữ dựa trên 3 đầu điểm (A,B,C)
+      //tong = A*0,6 + B*0,3 + C*0,1 => điểm chữ tương ứng
+      
+      
+
+    </script>
+    
+</body>
+</html>

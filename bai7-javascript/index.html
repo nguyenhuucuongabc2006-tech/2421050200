@@ -206,6 +206,92 @@
         }
         n=5;
     
+        document.write("<br>");
+
+         var n="2000000000000000000000001";
+         var doDai=n.length;
+         var soCuoiCung = n[doDai-1];
+         document.write(doDai);
+         document.write(soCuoiCung);
+        if(soCuoiCung%2==0){
+            document.write(n + "Số chẵn");
+        }else{
+            document.write(n + "Số lẻ");
+        };
+
+        document.write("<br>");
+
+        //switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay){
+            case 5:
+                document.write("Finally Friday");
+                break;
+            case 6:
+                document.write("Super Saturday");
+                break;
+            case 0:
+                document.write("Sleepy Sunday")
+                break;
+            default:
+                document.write("I'm looking forward to this weekend!");
+        }
+
+
+        for(var index = 1; index <= 10; index++){
+              document.write("<br>");
+              document.write("Anh xin loi lan thu" +index);
+        }
+
+        for(var i = 0; i< mang.length; i++){
+            document.write("<br>");
+            document.write(mang[i]);
+
+        }
+
+           
+        for(var i = 0; i< mang.length; i++){
+            document.write("<br>");
+            if(isNaN(mang[i]) == true){
+                
+                document.write("xin chao"+ " " + mang[i]);
+    
+            }
+        }
+        
+        //while
+        var i = 0;
+        while(i <= 10){
+            document.write("The number is" + i);
+            document.write("<br />");
+            i = i + 1;
+        }
+        //do while
+        var j = 0;
+        do{
+            document.write("The number is" + i);
+            document.write("<br />");
+            j = j + 1;
+        }while (j <= 10);
+        
+        //popup boxes
+        alert("hello");
+
+        var r = confirm("Press a button")
+        if (r == true){
+            document.write("You pressed OK!")
+
+        }
+        else{
+            document.write("You pressed Cancel!")
+        }
+         
+            document.write("<br>");
+
+        var r = prompt("Nhap vao ho ten","ten o day");
+        document.write(r);
+
         
 
         
