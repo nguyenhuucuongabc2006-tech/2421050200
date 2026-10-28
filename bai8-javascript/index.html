@@ -6,7 +6,39 @@
     <title>JS - 2</title>
 </head>
 <body>
+   <div>
+    Nhập điểm A: <input id="diemA" type="number">
+   </div>
+   <div>
+    Nhập điểm B: <input id="diemB" type="number">
+   </div>
+   <div>
+    Nhập điểm C: <input id="diemC" type="number">
+   </div>
+   <div>
+    <button onclick="tinhDiemChu()">Tính Điểm Chữ</button> 
+   </div>
+   <div>
+     Kết quả: <input id="ketQua" type="text">
+  </div>
+ 
+   
+
+
     <script>
+
+     
+      function tinhDiem(){
+        var A = parseFloat(document.getElementById("diemA").value);
+        var B = parseFloat(document.getElementById("diemB").value);
+        var C = parseFloat(document.getElementById("diemC").value);
+        
+        //document.write("Điểm A nhập vào là: " + A);
+        //document.write("Điểm B nhập vào là: " + B);
+        //document.write("Điểm C nhập vào là: " + C);
+
+        document.getElementById("ketQua").value = tinhDiemChu(A, B, C);
+      }
       //function
 
       //không tham số
@@ -33,7 +65,7 @@
         }
       }
       var soThuNhat = prompt("Nhập số thứ 1 ", "");
-      var soThuNhat = prompt("Nhập số thứ 2 ", "");
+      var soThuHai = prompt("Nhập số thứ 2 ", "");
       tinhTong(soThuNhat, soThuHai);
       document.write(+tinhTong);
 
@@ -41,6 +73,42 @@
       //Viết hàm tính điểm chữ dựa trên 3 đầu điểm (A,B,C)
       //tong = A*0,6 + B*0,3 + C*0,1 => điểm chữ tương ứng
       
+
+      function tinhDiemChu(A, B, C){
+        var tong = A*0.6 + B*0.3 + C*0.1;
+        var kq = "";
+        if (tong >= 9 && tong <= 10){
+            kq = "A+";
+        } else if (tong >= 8.5 && tong < 9){
+            kq = "A" ;
+        } else if (tong >= 8 && tong < 8.5){
+            kq = "B+";
+        } else if (tong >= 7 && tong < 8){
+            kq = "B" ;
+        } else if (tong >= 6.5 && tong < 7){
+            kq = "C+";
+        } else if (tong >= 5.5 && tong < 6.5){
+            kq = "C";
+        } else if (tong >= 5 && tong < 5.5){
+            kq = "D+";
+        } else if (tong >= 4 && tong < 5){
+            kq = "D";
+        } else {
+            kq = "F";
+        }
+      }
+      return kq;
+       
+      
+      
+      
+      
+       // var A = parseFloat();//ép kiểu dữ liệu sang số thực
+       // var B = parseFloat(); 
+       // var C = parseFloat();
+     // tinhDiemChu("5", 6, 7);
+
+    
       
 
     </script>

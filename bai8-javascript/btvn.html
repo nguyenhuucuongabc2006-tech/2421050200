@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+</head>
+<body>
+   <div>
+    Nhập điểm A: <input id="diemA" type="number">
+   </div>
+   <div>
+    Nhập điểm B: <input id="diemB" type="number">
+   </div>
+   <div>
+    Nhập điểm C: <input id="diemC" type="number">
+   </div>
+   <div>
+    <button onclick="tinhDiem()">Tính Điểm Chữ</button> 
+   </div>
+   <div>
+     Kết quả: <input id="ketQua" type="text">
+   </div>
+   
+   <div>
+    Nhập năm sinh: <input id="namSinh" type="text">
+   </div>
+   <div>
+    <button onclick="namSinh()">Tính Năm Sinh</button> 
+   </div>
+   <div>
+     Tuổi: <input id="tuoi" type="text">
+   </div>
+    <script>
+         function tinhDiem(){
+        var A = parseFloat(document.getElementById("diemA").value);
+        var B = parseFloat(document.getElementById("diemB").value);
+        var C = parseFloat(document.getElementById("diemC").value);
+        
+        //document.write("Điểm A nhập vào là: " + A);
+        //document.write("Điểm B nhập vào là: " + B);
+        //document.write("Điểm C nhập vào là: " + C);
+
+        document.getElementById("ketQua").value = tinhDiemChu(A, B, C);
+    }
+
+      function tinhDiemChu(A, B, C){
+       
+
+        var tong = A*0.6 + B*0.3 + C*0.1;
+        var kq = "";
+
+        if (tong >= 9 && tong <= 10){
+            kq = "A+";
+        } else if (tong >= 8.5 && tong < 9){
+            kq = "A" ;
+        } else if (tong >= 8 && tong < 8.5){
+            kq = "B+";
+        } else if (tong >= 7 && tong < 8){
+            kq = "B" ;
+        } else if (tong >= 6.5 && tong < 7){
+            kq = "C+";
+        } else if (tong >= 5.5 && tong < 6.5){
+            kq = "C";
+        } else if (tong >= 5 && tong < 5.5){
+            kq = "D+";
+        } else if (tong >= 4 && tong < 5){
+            kq = "D";
+        } else {
+            kq = "F";
+        }
+        return kq;
+      }
+    
+      function namSinh(){
+        var nam = parseInt(document.getElementById("namSinh").value);
+        document.getElementById("tuoi").value = tinhNamSinh(nam);
+      }
+      function tinhNamSinh(namSinh) {
+        var homNay = new Date()
+        var namNay = homNay.getFullYear()
+        var tuoi="";
+        tuoi=namNay-namSinh;
+        return tuoi;
+      }
+    </script>
+    
+</body>
+</html>

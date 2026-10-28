@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{
+            width:80%;
+            height:400px;
+            text-align:center;
+        }
+
+        .danh-sach{
+            width: 80%;
+            display:flex;
+            margin: 50px auto;
+            justify-content:space-between;
+        }
+        .anh{
+            width:24%;
+            height:100px;
+            background-color: aqua;
+            img{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--màn xem-->
+    <div>
+        <iframe class="video" width="560" height="315"
+         src="https://www.youtube.com/embed/FN7ALfpGxiI?si=wGgQQkuOtHGCOXcP" 
+         title="YouTube video player" 
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <h3 class="ten">Nơi này có anh</h3>
+    </div>
+    <div class="danh-sach">
+        <div class="anh" onclick="chonVid(1)">
+            <img src="../anh/nnca.png" alt="">
+            <p><h2>Nơi này có anh</h2></p>
+        </div>
+        <div class="anh" onclick="chonVid(2)">
+            <img src="../anh/viendanho.png" alt="">
+            <p><h2>Viên đá nhỏ</h2></p>
+        </div>
+        <div class="anh" onclick="chonVid(3)">
+            <img src="../anh/yeuduoi.png" alt="">
+            <p><h2>Yếu đuối</h2></p>
+        </div>
+        <div class="anh" onclick="chonVid(4)">
+            <img src="../anh/atdncd.png" alt="">
+            <p><h2>Anh tự do nhưng cô đơn</h2></p>
+        </div>
+    </div>
+    <script>
+        var danhSachVid=[
+            {
+                id:1,
+                ten:"Nơi này có anh",
+                anh:"../anh/nnca.png",
+                duongDanYoutube:"https://www.youtube.com/embed/FN7ALfpGxiI?si=LZEYMkK9hbP5cFYE"
+            },
+             {
+                id:2,
+                ten:"Viên đá nhỏ",
+                anh:"../anh/viendanho.png",
+                duongDanYoutube:"https://www.youtube.com/embed/fePqV_Fi-gY?si=ZZumu1odZ_9SpvEk" 
+            },
+             {
+                id:3,
+                ten:"Yếu đuối",
+                anh:"../anh/yeuduoi.png",
+                duongDanYoutube:"https://www.youtube.com/embed/hoiJK8s8OXU?si=DQsMdlicEPInBAHA" 
+            },
+             {
+                id:4,
+                ten:"Anh tự do nhưng cô đơn",
+                anh:"../anh/atdncd.png",
+                duongDanYoutube:"https://www.youtube.com/embed/rcctLyl8YKM?si=G81uziuPj5KmoQin"
+            },
+        ]
+        function chonVid(id){
+            for(let i=0; i < danhSachVid.length; i++){
+                if(danhSachVid[i].id==id){
+
+                document.getElementsByClassName("ten")[0].innerHTML = danhSachVid[i].ten;
+                document.getElementsByTagName("iframe")[0].src = danhSachVid[i].duongDanYoutube;
+              }
+
+            }
+        
+        }
+       
+    </script>
+
+</body>
+</html>
