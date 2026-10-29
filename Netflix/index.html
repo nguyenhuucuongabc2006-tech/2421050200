@@ -131,7 +131,7 @@
     <img class="anh-banner"
      src="../anh/anhnen.png"
      alt="Xem trailer"
-     onclick="xemTrailer()">
+     onclick="chonPhim()">
 
     <div id="khungVideo" style="display: none;">
         <iframe
@@ -242,11 +242,32 @@
               <img src="../anh/gdgt4.png" class="phim-poster" onclick="chonPhim(24)"></img>
               <img src="../anh/gdgt5.png" class="phim-poster" onclick="chonPhim(25)"></img>
               
+              
+                </div>
+            </div>    
+        </div>
+ 
+        <div class="the-loai">
+            <div class="ten-the-loai">
+                Mới và Phổ biến
+            </div>
+            <div class="danh-sach-phim">
+                <div class="phim">
+              <img src="../anh/moi1.png" class="phim-poster" onclick="chonPhim(26)"></img>
+              <img src="../anh/moi2.png" class="phim-poster" onclick="chonPhim(27)"></img>
+              <img src="../anh/moi3.png" class="phim-poster" onclick="chonPhim(28)"></img>
+              <img src="../anh/moi4.png" class="phim-poster" onclick="chonPhim(29)"></img>
+              <img src="../anh/moi5.png" class="phim-poster" onclick="chonPhim(30)"></img>
+             
             
             
                 </div>
             </div>    
         </div>
+
+
+
+
      <div class="the-loai">
             <div class="ten-the-loai">
                Nhân vật
@@ -416,7 +437,7 @@ var danhSachPhim = [
         ten: "Shin cậu bé bút chì",
         thoiLuong: 20,
         banner: "../anh/anhnen.png",
-        trailer: "https://www.youtube.com/embed/zKF4436nClc?si=SZiFTBlMaB83VT-X"
+        trailer: "https://www.youtube.com/embed/PUaaeggN_iw?si=wMiER9InF48fmf1A"
     },
     {
         id: 20,
@@ -438,57 +459,81 @@ var danhSachPhim = [
         thoiLuong: 20,
         banner: "../anh/anhnen.png",
         trailer: "https://www.youtube.com/embed/lytpjFn6CqY?si=ARXJeXenSXsjJkZI"
-    },{
+    },
+    {
         id: 23,
         ten: "Học toán cùng pops kisd",
         thoiLuong: 20,
         banner: "../anh/anhnen.png",
         trailer: "https://www.youtube.com/embed/tZI3MpZWBjA?si=JaPIP9oUbibvAlyX" 
-    },{
+    },
+    {
         id: 24,
         ten: "Cừu vui vẻ và sói xám",
         thoiLuong: 20,
         banner: "../anh/anhnen.png",
         trailer: "https://www.youtube.com/embed/RQ77Z2UQQ-Q?si=C0dY2m5f4M5HPORO"
-    },{
+    },
+    {
         id: 25,
         ten: "Up",
         thoiLuong: 20,
         banner: "../anh/anhnen.png",
         trailer: "https://www.youtube.com/embed/ABBAzWNl4Zc?si=bimnY5GisyO3008c"
     },
+    {
+        id: 26,
+        ten: "Na tra 2",
+        thoiLuong: 20,
+        banner: "../anh/anhnen.png",
+        trailer: "https://www.youtube.com/embed/8qdtACt-FQo?si=c42JR_tyrT5MXkeW"
+    },
+    {
+        id: 27,
+        ten: "Robot hoang dã",
+        thoiLuong: 20,
+        banner: "../anh/anhnen.png",
+        trailer: "https://www.youtube.com/embed/lNTSFRD76Vc?si=DviqMCYYvHig5u4J"
+    },
+    {
+        id: 28,
+        ten: "Zootopia 2",
+        thoiLuong: 20,
+        banner: "../anh/anhnen.png",
+        trailer:"https://www.youtube.com/embed/S5wQK3_6UZU?si=1obgowMWxxu7PtOU"
+    },
+    {
+        id: 29,
+        ten: "Goat 2026",
+        thoiLuong: 20,
+        banner: "../anh/anhnen.png",
+        trailer: "https://www.youtube.com/embed/s4v0QhvgxiE?si=2nDZ-hMk6PQ-1rdl"
+    },
+    {
+        id: 30,
+        ten: "Inside out 2",
+        thoiLuong: 20,
+        banner: "../anh/anhnen.png",
+        trailer: "https://www.youtube.com/embed/u9ksbrXrJnw?si=2d0x7kIql1Dnp06a"
+    },
 
 ];
 
-function xemTrailer() {
-    var anh = document.querySelector(".anh-banner");
-    var khungVideo = document.getElementById("khungVideo");
-    var video = document.getElementById("videoTrailer");
-
-    anh.style.display = "none";
-    khungVideo.style.display = "block";
-
-    video.src = danhSachPhim[0].trailer;
-}
-
-
 function chonPhim(id) {
-    for (var i = 0; i < danhSachPhim.length; i++) {
+    if (id == undefined) {
+        id = danhSachPhim[0].id;
+    }
+
+    for (let i = 0; i < danhSachPhim.length; i++) {
         if (danhSachPhim[i].id == id) {
-            var phim = danhSachPhim[i];
-
-            var anh = document.querySelector(".anh-banner");
-            var khungVideo = document.getElementById("khungVideo");
-            var video = document.getElementById("videoTrailer");
-
-            anh.style.display = "none";
-            khungVideo.style.display = "block";
-            video.src = phim.trailer;
-
+            document.getElementsByClassName("anh-banner")[0].style.display = "none";
+            document.getElementById("khungVideo").style.display = "block";
+            document.getElementsByTagName("iframe")[0].src = danhSachPhim[i].trailer;
             return;
         }
     }
 }
+
 
 
    </script>
