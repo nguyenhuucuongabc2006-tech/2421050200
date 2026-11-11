@@ -61,3 +61,8 @@ id key AUTO_INCREMENT int,
 phim_id int NOT NULL,
 dien_vien_id int NOT NULL
 
+INSERT INTO 'dien_vien'('ho_ten','ngay_sinh') VALUES ('Lương Quang Anh','2006-02-15');
+INSERT INTO 'dien_vien'('ho_ten','ngay_sinh') VALUES ('Nguyễn An Bình','2006-01-19');
+INSERT INTO 'dien_vien'('ho_ten','ngay_sinh') VALUES ('Nguyễn Huy Châu','2006-02-15');
+INSERT INTO 'dien_vien'('ho_ten','ngay_sinh') VALUES ('Nguyễn Thành Công','2006-02-15');
+INSERT INTO 'dien_vien'('ho_ten','ngay_sinh') VALUES ('Trịnh Trần Phương Tuấn','2006-02-15');

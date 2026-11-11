@@ -72,3 +72,14 @@ CREATE TABLE phim_dien_vien (
 --     id INT AUTO_INCREMENT PRIMARY KEY,
 --     ten_dang_nhap VARCHAR(30) NOT NULL
 -- );
+--dao dien
+INSERT INTO 'dao_dien'('ho_ten','ngay_sinh') VALUES ('Nguyễn Hữu Cường','2006-05-21');
+--phim
+INSERT INTO 'phim'('ten_phim','quoc_gia','nam','do_tuoi','mo_ta','dao_dien_id') VALUES ('Conan','Nhật Bản','2003-1-1','14','hoạt hình',1);
+--phim the loai
+INSERT INTO 'phim_the_loai'('phim_id','the_loai_id') VALUES (1,1)
+INSERT INTO 'phim_the_loai'('phim_id','the_loai_id') VALUES (1,2)
+--phim dien vien
+INSERT INTO 'phim_dien_vien'('phim_id','dien_vien_id') VALUES (1,1)
+--nguoi dung
+INSERT INTO 'nguoi_dung'(' ten_dang_nhap','mat_khau','email','ho_ten','ngay_sinh','so_dien_thoai','gioi_tinh') VALUES (nguyenhuucuong,'123456','nguyenhuucuong@123.com','Nguyễn Hữu Cường','2006-05-21','0123456789',1)
