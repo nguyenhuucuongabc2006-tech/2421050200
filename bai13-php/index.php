@@ -1,28 +1,98 @@
-<?php
-   // Session
-   session_start(); //Bắt đầu session
-   $_SESSION['Name'] = "user";
+<!DOCTYPE html>
+<html lang="en">
 
-   echo "Session Name: " . $_SESSION['Name'];
- 
-   // cookieName: Tên cookie	Tên định danh của cookie (ví dụ: "user", "theme").  
-    // sẽ dùng tên này để gọi lại cookie bằng lệnh $_COOKIE[$cookieName].
-    // $cookieValue: Giá trị cookie	Nội dung dữ liệu  muốn lưu trữ (ví dụ: "JohnDoe", "dark_mode").
-    //  Giá trị này được lưu dưới dạng chuỗi (string).
-    //  time() + 86400:	Thời gian hết hạn. Xác định thời điểm cookie tự động xóa. 
-    // time() lấy thời gian hiện tại tính bằng giây, cộng thêm 86400 giây (tương đương 24 giờ hoặc 1 ngày). 
-    // Nếu không đặt tham số này, cookie sẽ mất ngay khi đóng trình duyệt.
-    // "/":	Đường dẫn áp dụng	Đường dẫn trên máy chủ mà cookie có hiệu lực. 
-    // Dấu gạch chéo / nghĩa là cookie này sẽ có tác dụng trên toàn bộ trang web (tất cả các thư mục và trang con).
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            background-color: #1E3A8A;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        input::placeholder {
+            font-size: 16px;
+            font-style: italic;
+        }
+        h1{
+            background-color: white;
+            border-radius: 10px;
+        }
 
-   // Cookie
-   $cookieName = "user";
-   $cookieValue = "Kien";
+        li{
+            padding: 5px;
+        }
+        li:hover{
+            background-color: #2aab25;
+            border-radius: 13px;;
+        }
+    </style>
+</head>
 
-   setcookie($cookieName, $cookieValue, time() + 86400, "/"); // Tạo cookie với tên "user" và giá trị "Kien", hết hạn sau 1 ngày
-   if(isset($_COOKIE[$cookieName])) {
-    echo "cookie đã tồn tại";
-    } else {
-        echo "Cookie chưa được thiết lập!";
+<body>
+    <h1>Bạn đã đăng nhập thành công !</h1>
+    <?php
+    session_start();
+    if (!isset($_SESSION["dangNhap"]) && ($_SESSION["dangNhap"] == "thanhcong")) {
+        header("location: dangnhap.php");
     }
-?>
+
+    include 'connect.php';
+    ?>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php?page_layout=trangchu">Trang chủ</a></li>
+                <li><a href="index.php?page_layout=taikhoan">Tài khoản</a></li>
+                <li><a href="index.php?page_layout=danhmuc">Danh mục</a></li>
+                <li><a href="index.php?page_layout=phim">Phim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <?php
+        if(isset($_GET['page_layout'])){
+            $page = $_GET['page_layout'];
+            switch($page){
+                case 'trangchu':
+                    include 'trangchu.php';
+                    break;
+
+                case 'taikhoan':
+                    include 'taikhoan.php';
+                    break;
+
+                case 'danhmuc':
+                    include 'danhmuc.php';
+                    break;
+
+                case 'phim':
+                    include 'phim.php';
+                    break;
+
+                case 'themtaikhoan':
+                    include 'themtaikhoan.php';
+                    break;
+
+                case 'capnhattaikhoan':
+                    include 'capnhattaikhoan.php';
+                    break;
+
+                case 'xoataikhoan':
+                    include 'xoataikhoan.php';
+                    break;
+            }
+        }
+    
+    
+    ?>
+</body>
+
+</html>
